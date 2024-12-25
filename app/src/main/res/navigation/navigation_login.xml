@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_login"
+    app:startDestination="@id/giris_panel">
+
+    <fragment
+        android:id="@+id/giris_panel"
+        android:name="com.aliosman.kelimeoyunuprojesi.view.GirisPanel"
+        android:label="fragment_giris_panel"
+        tools:layout="@layout/fragment_giris_panel" >
+        <action
+            android:id="@+id/action_giris_panel_to_bilgi_panel"
+            app:destination="@id/bilgi_panel"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/bilgi_panel"
+        android:name="com.aliosman.kelimeoyunuprojesi.view.BilgiPanel"
+        android:label="fragment_bilgi_panel"
+        tools:layout="@layout/fragment_bilgi_panel" />
+</navigation>

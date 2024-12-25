@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainbackground"
+    app:layout_behavior=""
+    tools:context=".view.GirisPanel">
+
+    <ImageView
+        android:id="@+id/btn_language_tr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/btn_language_de"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/de_flag"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/view1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/k2d_semibold"
+        android:text="@string/kelime_bil"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="52sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_editor_absoluteX="24dp"
+        app:layout_editor_absoluteY="82dp" />
+
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="312dp"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/boxbackgroundcolorLight"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_editor_absoluteX="312dp"
+        app:layout_editor_absoluteY="258dp" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/boxbackgroundcolorLight"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toEndOf="@+id/view1"
+        app:layout_constraintTop_toBottomOf="@+id/view1"
+        app:layout_editor_absoluteX="312dp"
+        app:layout_editor_absoluteY="328dp" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/boxbackgroundcolorLight"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:layout_editor_absoluteX="312dp"
+        app:layout_editor_absoluteY="398dp" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/turuncu"
+        app:layout_constraintEnd_toEndOf="@+id/view3"
+        app:layout_constraintTop_toBottomOf="@+id/view3"
+        app:layout_editor_absoluteX="312dp"
+        app:layout_editor_absoluteY="468dp" />
+
+    <TextView
+        android:id="@+id/viewtextS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Ğ"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintStart_toStartOf="@+id/view4"
+        app:layout_constraintTop_toTopOf="@+id/view4"
+        app:layout_editor_absoluteX="312dp"
+        app:layout_editor_absoluteY="468dp" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="163dp"
+        android:layout_marginEnd="21dp"
+        android:background="@color/boxbackgroundcolorLight"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_editor_absoluteX="242dp"
+        app:layout_editor_absoluteY="328dp" />
+
+    <TextView
+        android:id="@+id/viewtextT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/R"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view5"
+        app:layout_constraintEnd_toEndOf="@+id/view5"
+        app:layout_constraintStart_toStartOf="@+id/view5"
+        app:layout_constraintTop_toTopOf="@+id/view5"
+        app:layout_editor_absoluteX="242dp"
+        app:layout_editor_absoluteY="328dp" />
+
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/boxbackgroundcolorLight"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/view3"
+        app:layout_constraintTop_toBottomOf="@+id/view5"
+        app:layout_editor_absoluteX="242dp"
+        app:layout_editor_absoluteY="398dp" />
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/boxbackgroundcolorLight"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/view4"
+        app:layout_constraintTop_toBottomOf="@+id/view6"
+        app:layout_editor_absoluteX="242dp"
+        app:layout_editor_absoluteY="468dp" />
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="233dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/boxbackgroundcolorLight"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/view6"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_editor_absoluteX="172dp"
+        app:layout_editor_absoluteY="398dp" />
+
+    <View
+        android:id="@+id/view9"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/boxbackgroundcolorLight"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/view7"
+        app:layout_constraintTop_toBottomOf="@+id/view8"
+        app:layout_editor_absoluteX="172dp"
+        app:layout_editor_absoluteY="468dp" />
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="233dp"
+        android:layout_marginEnd="19dp"
+        android:background="@color/yesil"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/view8"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_editor_absoluteX="102dp"
+        app:layout_editor_absoluteY="398dp" />
+
+    <TextView
+        android:id="@+id/viewtextA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/T"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view10"
+        app:layout_constraintEnd_toEndOf="@+id/view10"
+        app:layout_constraintStart_toStartOf="@+id/view10"
+        app:layout_constraintTop_toTopOf="@+id/view10"
+        app:layout_editor_absoluteX="102dp"
+        app:layout_editor_absoluteY="398dp" />
+
+    <View
+        android:id="@+id/view11"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/boxbackgroundcolorLight"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/view9"
+        app:layout_constraintTop_toBottomOf="@+id/view10"
+        app:layout_editor_absoluteX="102dp"
+        app:layout_editor_absoluteY="468dp" />
+
+    <View
+        android:id="@+id/view12"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="303dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/boxbackgroundcolorLight"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/view11"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_editor_absoluteX="32dp"
+        app:layout_editor_absoluteY="468dp" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewBasla"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="93dp"
+        android:layout_marginBottom="90dp"
+        app:cardBackgroundColor="@color/yesil"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/view12"
+        app:layout_constraintTop_toBottomOf="@+id/view11"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_editor_absoluteX="28dp"
+        app:layout_editor_absoluteY="611dp">
+
+        <Button
+            android:id="@+id/btnBasla"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/k2d_semibold"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/BASLA"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewbBilgi"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginBottom="90dp"
+        app:cardBackgroundColor="@color/yesil"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view4"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_editor_absoluteX="225dp"
+        app:layout_editor_absoluteY="611dp">
+
+        <Button
+            android:id="@+id/btnBilgi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/k2d_semibold"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/BILGI"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

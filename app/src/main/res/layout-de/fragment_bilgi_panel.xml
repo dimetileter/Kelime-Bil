@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainbackground"
+    android:orientation="vertical"
+    tools:context=".view.BilgiPanel">
+
+    <!-- İlk Bölme -->
+
+    <!-- Boşluk -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:text="@string/bir"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="120sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/birinci_bilgi"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/box5"
+            app:layout_constraintEnd_toEndOf="@+id/box5"
+            app:layout_constraintStart_toStartOf="@+id/box1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/box1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:visibility="visible"
+            app:cardBackgroundColor="@color/boxbackgroundcolorLight"
+            app:cardCornerRadius="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/box2"
+            app:layout_constraintEnd_toStartOf="@+id/box2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/S"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="34sp" />
+
+        </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/box2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="10dp"
+                    app:cardBackgroundColor="@color/boxbackgroundcolorLight"
+                    app:layout_constraintBottom_toBottomOf="@+id/box3"
+                    app:layout_constraintEnd_toStartOf="@+id/box3">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/P"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="34sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/box3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="10dp"
+                    app:cardBackgroundColor="@color/boxbackgroundcolorLight"
+                    app:layout_constraintBottom_toBottomOf="@+id/box4"
+                    app:layout_constraintEnd_toStartOf="@+id/box4">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/I"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="34sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/box4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="10dp"
+                    app:cardBackgroundColor="@color/boxbackgroundcolorLight"
+                    app:layout_constraintBottom_toBottomOf="@+id/box5"
+                    app:layout_constraintEnd_toStartOf="@+id/box5">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/E"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="34sp" />
+
+                </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/box5"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="260dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="26dp"
+            app:cardBackgroundColor="@color/boxbackgroundcolorLight"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/L"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="34sp" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/boxbackground" />
+
+        <!-- İkinci Bölme -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:text="@string/iki"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:textSize="120sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/ikinci_bilgi"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/box1in2"
+            app:layout_constraintEnd_toEndOf="@+id/box5in2"
+            app:layout_constraintStart_toStartOf="@+id/box1in2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/box1in2"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="260dp"
+            android:layout_marginBottom="26dp"
+            android:background="@color/boxbackgroundcolorLight"
+            app:cardCornerRadius="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintEnd_toStartOf="@+id/textView4"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </View>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/box2in2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            app:cardBackgroundColor="@color/yesil"
+            app:layout_constraintBottom_toBottomOf="@+id/box1in2"
+            app:layout_constraintStart_toEndOf="@+id/box1in2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/P"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:id="@+id/box3in2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:background="@color/boxbackgroundcolorLight"
+            app:layout_constraintBottom_toBottomOf="@+id/box2in2"
+            app:layout_constraintStart_toEndOf="@+id/box2in2">
+        </View>
+
+        <View
+            android:id="@+id/box4in2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:background="@color/boxbackgroundcolorLight"
+            app:layout_constraintBottom_toBottomOf="@+id/box3in2"
+            app:layout_constraintStart_toEndOf="@+id/box3in2">
+        </View>
+
+        <View
+            android:id="@+id/box5in2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:background="@color/boxbackgroundcolorLight"
+            app:layout_constraintBottom_toBottomOf="@+id/box4in2"
+            app:layout_constraintStart_toEndOf="@+id/box4in2"></View>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Boşluk -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/boxbackground" />
+
+    <!-- Üçüncü Bölme -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:text="@string/uc"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="120sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/ucuncu_bilgi"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/box5in3"
+            app:layout_constraintEnd_toEndOf="@+id/box5in3"
+            app:layout_constraintStart_toStartOf="@+id/box1in3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/box1in3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/boxbackgroundcolorLight"
+            app:cardCornerRadius="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/box2in3"
+            app:layout_constraintEnd_toStartOf="@+id/box2in3"></View>
+
+        <View
+            android:id="@+id/box2in3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/boxbackgroundcolorLight"
+            app:layout_constraintBottom_toBottomOf="@+id/box3in3"
+            app:layout_constraintEnd_toStartOf="@+id/box3in3"></View>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/box3in3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            app:cardBackgroundColor="@color/turuncu"
+            app:layout_constraintBottom_toBottomOf="@+id/box4in3"
+            app:layout_constraintEnd_toStartOf="@+id/box4in3">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/S"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="34sp" />
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:id="@+id/box4in3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/boxbackgroundcolorLight"
+            app:layout_constraintBottom_toBottomOf="@+id/box5in3"
+            app:layout_constraintEnd_toStartOf="@+id/box5in3"></View>
+
+        <View
+            android:id="@+id/box5in3"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="260dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="26dp"
+            android:background="@color/boxbackgroundcolorLight"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView3"></View>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Boşluk -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/boxbackground" />
+
+    <!-- Dördüncü Bölme -->
+
+    <!-- Boşluk -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="72dp"
+            android:layout_height="160dp"
+            android:text="@string/dort"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:textSize="120sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/dorduncu_bilgi"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/box1in4"
+            app:layout_constraintEnd_toEndOf="@+id/box5in4"
+            app:layout_constraintStart_toStartOf="@+id/box1in4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/box1in4"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="260dp"
+            android:layout_marginBottom="26dp"
+            android:background="@color/boxbackgroundcolorLight"
+            app:cardCornerRadius="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintEnd_toStartOf="@+id/textView6"
+            app:layout_constraintStart_toStartOf="parent"></View>
+
+        <View
+            android:id="@+id/box2in4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:background="@color/boxbackgroundcolorLight"
+            app:layout_constraintBottom_toBottomOf="@+id/box1in4"
+            app:layout_constraintStart_toEndOf="@+id/box1in4"></View>
+
+        <View
+            android:id="@+id/box3in4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:background="@color/boxbackgroundcolorLight"
+            app:layout_constraintBottom_toBottomOf="@+id/box2in4"
+            app:layout_constraintStart_toEndOf="@+id/box2in4"></View>
+
+        <View
+            android:id="@+id/box4in4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:background="@color/boxbackgroundcolorLight"
+            app:layout_constraintBottom_toBottomOf="@+id/box3in4"
+            app:layout_constraintStart_toEndOf="@+id/box3in4"></View>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/box5in4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            app:cardBackgroundColor="@color/boxbackgroundcolorDark"
+            app:layout_constraintBottom_toBottomOf="@+id/box4in4"
+            app:layout_constraintStart_toEndOf="@+id/box4in4">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/D"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="34sp" />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/boxbackground" />
+
+        <!-- Beşinci Bölme -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:text="@string/bes"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="120sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/besinci_bilgi"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/box5in5"
+            app:layout_constraintEnd_toEndOf="@+id/box5in5"
+            app:layout_constraintStart_toStartOf="@+id/box1in5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/box1in5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            app:cardBackgroundColor="@color/yesil"
+            app:cardCornerRadius="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/box2in5"
+            app:layout_constraintEnd_toStartOf="@+id/box2in5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/S"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/box2in5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            app:cardBackgroundColor="@color/yesil"
+            app:layout_constraintBottom_toBottomOf="@+id/box3in5"
+            app:layout_constraintEnd_toStartOf="@+id/box3in5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/P"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/box3in5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            app:cardBackgroundColor="@color/yesil"
+            app:layout_constraintBottom_toBottomOf="@+id/box4in5"
+            app:layout_constraintEnd_toStartOf="@+id/box4in5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/I"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/box4in5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            app:cardBackgroundColor="@color/yesil"
+            app:layout_constraintBottom_toBottomOf="@+id/box5in5"
+            app:layout_constraintEnd_toStartOf="@+id/box5in5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/E"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/box5in5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="260dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="26dp"
+            app:cardBackgroundColor="@color/yesil"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/L"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+        </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
