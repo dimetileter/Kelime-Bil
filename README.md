@@ -249,7 +249,7 @@ app/src/main/
 
 ```bash
 # 1. Repoyu klonlayın | Klonen Sie das Repository
-git clone https://github.com/kullaniciadi/Kelime-Bil.git
+git clone https://github.com/dimetileter/Kelime-Bil.git
 
 # 2. Android Studio ile açın | Öffnen Sie es in Android Studio
 # File -> Open -> Kelime-Bil klasörünü seçin
